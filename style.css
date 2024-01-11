@@ -1,0 +1,10 @@
+.hide {
+    display: none;
+}
+
+#container {
+    background-image: url(assets/images/bestore.PNG);
+    background-size: 1520px;
+    min-height: 381px;
+    background-repeat: no-repeat;
+}
