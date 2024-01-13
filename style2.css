@@ -4,6 +4,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0px;
+    word-spacing: 0px;
     margin: 0;
     padding: 0;
 }
@@ -61,7 +62,7 @@ li {
     line-height: 65px;
     color: gray;
     width: 1436px;
-    background-color: rgb(237, 235, 235);
+    background-color: #F7F7F7;
     /* border-bottom: 1px solid rgb(206, 39, 39); */
     font-size: 18px;
     padding: 0px 50px 0px 50px;
@@ -97,32 +98,41 @@ ul {
 
 }
 
-.main>div,
-nav {
+.main>.mainlogo,
+.searchform,
+#utilitymenu {
     display: inline-block;
 }
 
 .main {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 50px 0px 50px;
+    /* background-color: aqua; */
+    height: 100px;
+    width: 1436px;
 }
 
-.main>div {
+.main>div,
+nav {
     vertical-align: middle;
 }
 
 .mainlogo>img {
     width: 150px;
-    padding-right: 70px;
+    padding-left: 30px;
+    padding-top: 23px;
 }
 
-.main>div>label,
+/* .main>div>label,
 input {
     vertical-align: middle;
-}
+} */
 
 .main>div>form>label>button {
     border: 0;
     background-color: transparent;
+    height: 48px;
+    width: 43px;
+    text-align: right;
 }
 
 .main>div>form>input {
@@ -130,48 +140,66 @@ input {
     background-color: transparent;
     margin: 0;
     padding: 0;
-    height: 30px;
-    width: 510px;
+    height: 48px;
+    width: 490px;
 }
 
 .main>.searchform {
-    width: 550px;
+    width: 538px;
+    height: 48px;
     border: 1px solid rgb(246, 243, 243);
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-left: 67px;
+    /* vertical-align: middle; */
+}
+
+.ph::placeholder {
+    font-size: large;
+    color: gray;
+    opacity: 0.2;
+    line-height: 30px;
 }
 
 #utilitymenu {
-    padding-left: 178px;
+    margin: 0;
+    padding: 0;
+}
+
+#utilitymenu>ul {
+    padding-top: 17px;
+
 }
 
 #utilitymenu>ul>li {
+    margin: 0;
+    padding: 0;
     vertical-align: middle;
-
 }
 
-#utilitymenu>ul>li>button {
-    width: 60px;
+#utilitymenu>ul>li>a {
     border: 0;
     background-color: transparent;
-    vertical-align: middle;
-    cursor: pointer;
+    font-size: 18px;
 }
 
 #productmenu {
-    padding: 0px 50px 0px 50px;
+    padding: 0px 50px 27px 50px;
     vertical-align: middle;
+    width: 1436px;
+    border-bottom: 1px solid rgb(232, 231, 231);
 }
 
 #productmenu>ul {
     margin: 0;
     padding: 0;
-    height: 25px;
-    width: 100%;
+    padding-left: 50px;
+    padding-top: 29px;
 }
 
 #productmenu>ul>li {
-    width: 150px;
-    text-align: left;
-
+    font-size: 20px;
+    display: inline-block;
 }
 
 .hide {
@@ -203,4 +231,16 @@ input {
 
 .fc-g {
     color: gray;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pl-25 {
+    padding-left: 25px;
+}
+
+.pl-10 {
+    padding-left: 10px;
 }
